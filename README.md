@@ -26,7 +26,7 @@ explained in detail in file [dpsniper/example.py](dpsniper/example.py):
 
 ```bash
 conda activate dp-sniper
-python dpsniper/example.py
+python dpsniper/example.py # may take a while due to an extensive final confirmation
 ```
 
 This commands stores temporary outputs and log files to the folder

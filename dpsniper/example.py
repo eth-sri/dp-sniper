@@ -17,6 +17,7 @@ if __name__ == "__main__":
     classifier_factory = LogisticRegressionFactory(in_dimensions=1, optimizer_factory=SGDOptimizerFactory())
 	# consider 1-dimensional floating point input pairs from the range [-10, 10] with maximum distance of 1
     input_generator = PatternGenerator(InputDomain(1, InputBaseType.FLOAT, [-10, 10]), False)
+	# adapt the number of processes to fit your machine
     config = DDConfig(n_processes=2)
 
     with initialize_dpsniper(config, out_dir="example_outputs"):
