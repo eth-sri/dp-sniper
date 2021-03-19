@@ -56,8 +56,8 @@ The main algorithms DD-Search and DP-Sniper from the paper can be found in
 
 ### Citing this Work
 
-You are encouraged to cite the following BibTeX entry if you use DP-Sniper for
-academic research.
+You are encouraged to cite the above publication using the following BibTeX entry
+if you use DP-Sniper for academic research.
 
     TODO: Add bibtex
 
