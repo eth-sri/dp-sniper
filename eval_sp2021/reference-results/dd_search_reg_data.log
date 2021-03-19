@@ -1,0 +1,160 @@
+{"ctx": ["LaplaceMechanism"], "time_dp_distinguisher_all_inputs": 19.552954278886318}
+{"ctx": ["LaplaceMechanism"], "best_result": {"a1": "[1.]", "a2": "[2.]", "attack": "t = 0.548, q = 0.635572572224156, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[14.06702114], mean=[1.47632368]), model_structure=Sequential(\n  (0): Linear(in_features=1, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[0.0699]])), ('0.bias', tensor([-0.0001]))])]", "eps": 0.1015737003234296, "lower_bound": 0.0917919832890437}}
+{"ctx": ["LaplaceMechanism"], "time_dd_search": 19.55496844649315}
+{"ctx": ["LaplaceMechanism"], "p1": 0.011047356628959277}
+{"ctx": ["LaplaceMechanism"], "p2": 0.010005449079359555}
+{"ctx": ["LaplaceMechanism"], "time_final_estimate_eps": 1.8509732857346535}
+{"ctx": ["LaplaceMechanism"], "eps": 0.0990613277260195}
+{"ctx": ["LaplaceMechanism"], "eps_lcb": 0.09680373477842874}
+{"ctx": ["TruncatedGeometricMechanism"], "time_dp_distinguisher_all_inputs": 17.928524881601334}
+{"ctx": ["TruncatedGeometricMechanism"], "best_result": {"a1": "[2]", "a2": "[1]", "attack": "t = 0.533, q = 0.030254456948049138, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[2.27053934], mean=[2.235385]), model_structure=Sequential(\n  (0): Linear(in_features=1, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[-0.1086]])), ('0.bias', tensor([0.0005]))])]", "eps": 0.11823658175793739, "lower_bound": 0.10850233858466574}}
+{"ctx": ["TruncatedGeometricMechanism"], "time_dd_search": 17.930666275322437}
+{"ctx": ["TruncatedGeometricMechanism"], "p1": 0.011248360822005114}
+{"ctx": ["TruncatedGeometricMechanism"], "p2": 0.009998247417273145}
+{"ctx": ["TruncatedGeometricMechanism"], "time_final_estimate_eps": 1.5381108820438385}
+{"ctx": ["TruncatedGeometricMechanism"], "eps": 0.11781259396197541}
+{"ctx": ["TruncatedGeometricMechanism"], "eps_lcb": 0.11556448250263873}
+{"ctx": ["NoisyHist1"], "time_dp_distinguisher_all_inputs": 34.752256974577904}
+{"ctx": ["NoisyHist1"], "best_result": {"a1": "[0 1 1 1 1]", "a2": "[1 1 1 1 1]", "attack": "t = 0.548, q = 0.5474349964862966, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[14.16700021 14.15935308 14.11586145 14.12514326 14.20151988], mean=[0.4953691  0.99092762 1.00650126 1.03345445 0.98370984]), model_structure=Sequential(\n  (0): Linear(in_features=5, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[ 7.0695e-02,  9.0460e-04, -4.7313e-04,  9.7740e-05, -1.0664e-03]])), ('0.bias', tensor([2.7278e-05]))])]", "eps": 0.10525104718457978, "lower_bound": 0.09550701089121016}}
+{"ctx": ["NoisyHist1"], "time_dd_search": 34.75485044717789}
+{"ctx": ["NoisyHist1"], "p1": 0.011122753791286017}
+{"ctx": ["NoisyHist1"], "p2": 0.01006383799016163}
+{"ctx": ["NoisyHist1"], "time_final_estimate_eps": 2.9087690636515617}
+{"ctx": ["NoisyHist1"], "eps": 0.10004429939360726}
+{"ctx": ["NoisyHist1"], "eps_lcb": 0.09779357853762427}
+{"ctx": ["NoisyHist2"], "time_dp_distinguisher_all_inputs": 37.82175385951996}
+{"ctx": ["NoisyHist2"], "best_result": {"a1": "[0 1 1 1 1]", "a2": "[1 1 1 1 1]", "attack": "t = 0.265, q = 0.8318264014466547, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[0.51920905 0.14169891 0.14154581 0.14107328 0.14102353], mean=[0.50068227 1.00006865 0.99985798 1.00000742 1.00046742]), model_structure=Sequential(\n  (0): Linear(in_features=5, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[ 4.8825e+00, -1.6676e-03,  2.8466e-04, -4.1840e-04, -1.0528e-03]])), ('0.bias', tensor([0.0048]))])]", "eps": 4.605469064172688, "lower_bound": 4.600447530676057}}
+{"ctx": ["NoisyHist2"], "time_dd_search": 37.82465759664774}
+{"ctx": ["NoisyHist2"], "p1": 0.9988673906419531}
+{"ctx": ["NoisyHist2"], "p2": 0.010008553499095841}
+{"ctx": ["NoisyHist2"], "time_final_estimate_eps": 2.793829895555973}
+{"ctx": ["NoisyHist2"], "eps": 4.603181950437034}
+{"ctx": ["NoisyHist2"], "eps_lcb": 4.60202151350145}
+{"ctx": ["ReportNoisyMax1"], "time_dp_distinguisher_all_inputs": 58.812131866812706}
+{"ctx": ["ReportNoisyMax1"], "best_result": {"a1": "[1. 1. 1. 1. 1.]", "a2": "[0. 2. 2. 2. 2.]", "attack": "t = 0.511, q = 0.054937663721939436, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[1.40571826], mean=[2.02768]), model_structure=Sequential(\n  (0): Linear(in_features=1, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[0.0304]])), ('0.bias', tensor([7.6705e-05]))])]", "eps": 0.09512574123596984, "lower_bound": 0.08534141116072114}}
+{"ctx": ["ReportNoisyMax1"], "time_dd_search": 58.822325728833675}
+{"ctx": ["ReportNoisyMax1"], "p1": 0.010987673110118697}
+{"ctx": ["ReportNoisyMax1"], "p2": 0.009996738571682356}
+{"ctx": ["ReportNoisyMax1"], "time_final_estimate_eps": 2.994782604277134}
+{"ctx": ["ReportNoisyMax1"], "eps": 0.0945151211081825}
+{"ctx": ["ReportNoisyMax1"], "eps_lcb": 0.09225381318933756}
+{"ctx": ["ReportNoisyMax2"], "time_dp_distinguisher_all_inputs": 55.7190150693059}
+{"ctx": ["ReportNoisyMax2"], "best_result": {"a1": "[1. 1. 1. 1. 1.]", "a2": "[0. 2. 2. 2. 2.]", "attack": "t = 0.512, q = 0.05529052847410543, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[1.40598911], mean=[2.020485]), model_structure=Sequential(\n  (0): Linear(in_features=1, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[0.0340]])), ('0.bias', tensor([-8.9812e-05]))])]", "eps": 0.09997471376393641, "lower_bound": 0.09020453211265878}}
+{"ctx": ["ReportNoisyMax2"], "time_dd_search": 55.72198273986578}
+{"ctx": ["ReportNoisyMax2"], "p1": 0.011056148686565745}
+{"ctx": ["ReportNoisyMax2"], "p2": 0.010006410730083007}
+{"ctx": ["ReportNoisyMax2"], "time_final_estimate_eps": 2.693197064101696}
+{"ctx": ["ReportNoisyMax2"], "eps": 0.09976075482751412}
+{"ctx": ["ReportNoisyMax2"], "eps_lcb": 0.09750314019873763}
+{"ctx": ["ReportNoisyMax3"], "time_dp_distinguisher_all_inputs": 59.353972904384136}
+{"ctx": ["ReportNoisyMax3"], "best_result": {"a1": "[0. 0. 0. 0. 0.]", "a2": "[1. 1. 1. 1. 1.]", "attack": "t = 0.515, q = 0.7987471952131638, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[24.34399723], mean=[32.2667699]), model_structure=Sequential(\n  (0): Linear(in_features=1, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[0.0399]])), ('0.bias', tensor([3.5704e-05]))])]", "eps": 0.2523905367636381, "lower_bound": 0.24297945804165177}}
+{"ctx": ["ReportNoisyMax3"], "time_dd_search": 59.35574780404568}
+{"ctx": ["ReportNoisyMax3"], "p1": 0.012882412753365746}
+{"ctx": ["ReportNoisyMax3"], "p2": 0.010032937596204189}
+{"ctx": ["ReportNoisyMax3"], "time_final_estimate_eps": 3.038853108882904}
+{"ctx": ["ReportNoisyMax3"], "eps": 0.24998958863476872}
+{"ctx": ["ReportNoisyMax3"], "eps_lcb": 0.24781576679261352}
+{"ctx": ["ReportNoisyMax4"], "time_dp_distinguisher_all_inputs": 59.81808106601238}
+{"ctx": ["ReportNoisyMax4"], "best_result": {"a1": "[1. 1. 1. 1. 1.]", "a2": "[2. 2. 2. 2. 2.]", "attack": "t = 0.515, q = 0.6151915579109565, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[24.24519023], mean=[47.15045165]), model_structure=Sequential(\n  (0): Linear(in_features=1, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[0.0411]])), ('0.bias', tensor([1.7591e-05]))])]", "eps": 0.3534696376095443, "lower_bound": 0.3442806230978599}}
+{"ctx": ["ReportNoisyMax4"], "time_dd_search": 59.82076967507601}
+{"ctx": ["ReportNoisyMax4"], "p1": 0.01421908563636682}
+{"ctx": ["ReportNoisyMax4"], "p2": 0.010035394536572269}
+{"ctx": ["ReportNoisyMax4"], "time_final_estimate_eps": 3.071947678923607}
+{"ctx": ["ReportNoisyMax4"], "eps": 0.34846682354116076}
+{"ctx": ["ReportNoisyMax4"], "eps_lcb": 0.34634322696561437}
+{"ctx": ["SparseVectorTechnique1"], "time_dp_distinguisher_all_inputs": 117.96491601318121}
+{"ctx": ["SparseVectorTechnique1"], "best_result": {"a1": "[0. 0. 0. 0. 0. 1. 1. 1. 1. 1.]", "a2": "[1. 1. 1. 1. 1. 0. 0. 0. 0. 0.]", "attack": "t = 0.52, q = 0.45481788156882413, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[0.5        0.40641177 0.30599209 0.23370563 0.18412097 0.15026875\n 0.12508873 0.1038796  0.08866902 0.07655226 1.         0.5\n 0.45436373 0.38970267 0.33493412 0.2913063  0.25600457 0.2272174\n 0.20442678 0.1857287 ], mean=[0.49995  0.208745 0.104565 0.05798  0.035135 0.023115 0.0159   0.01091\n 0.007925 0.005895 0.       0.49995  0.708695 0.81326  0.87124  0.906375\n 0.92949  0.94539  0.9563   0.964225]), model_structure=Sequential(\n  (0): Linear(in_features=20, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[-0.0936,  0.0230,  0.0179,  0.0084,  0.0321, -0.0228, -0.0512, -0.0674,\n          0.0020, -0.0011, -0.1352,  0.1301,  0.0068, -0.0053,  0.0487, -0.0808,\n         -0.0723, -0.0560,  0.1331, -0.0092]])), ('0.bias', tensor([-3.8391e-05]))])]", "eps": 0.0870288009186222, "lower_bound": 0.07721247780969343}}
+{"ctx": ["SparseVectorTechnique1"], "time_dd_search": 117.96760918945074}
+{"ctx": ["SparseVectorTechnique1"], "p1": 0.01087348800683502}
+{"ctx": ["SparseVectorTechnique1"], "p2": 0.00995683895196358}
+{"ctx": ["SparseVectorTechnique1"], "time_final_estimate_eps": 8.012471832334995}
+{"ctx": ["SparseVectorTechnique1"], "eps": 0.08806788653261499}
+{"ctx": ["SparseVectorTechnique1"], "eps_lcb": 0.08579843744077742}
+{"ctx": ["SparseVectorTechnique2"], "time_dp_distinguisher_all_inputs": 148.08895901590586}
+{"ctx": ["SparseVectorTechnique2"], "best_result": {"a1": "[0. 0. 0. 0. 0. 1. 1. 1. 1. 1.]", "a2": "[1. 1. 1. 1. 1. 0. 0. 0. 0. 0.]", "attack": "t = 0.521, q = 0.4479724015507381, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[0.49997925 0.40689823 0.30614065 0.23651157 0.18476349 0.15050656\n 0.12466225 0.10588392 0.09145409 0.07748237 1.         0.49997925\n 0.45610118 0.39265608 0.33737301 0.29402127 0.25914082 0.23108629\n 0.20788478 0.18834424], mean=[0.495445 0.209425 0.10468  0.059475 0.03539  0.02319  0.01579  0.01134\n 0.008435 0.00604  0.       0.495445 0.70487  0.80955  0.869025 0.904415\n 0.927605 0.943395 0.954735 0.96317 ]), model_structure=Sequential(\n  (0): Linear(in_features=20, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[ 0.0959,  0.0133,  0.0139, -0.0074,  0.0050, -0.0532, -0.0320, -0.0551,\n         -0.0326, -0.0019,  0.0521, -0.0699,  0.0141, -0.0265,  0.0195, -0.0956,\n          0.0229, -0.0676,  0.0336,  0.0608]])), ('0.bias', tensor([1.1715e-05]))])]", "eps": 0.08914935253348233, "lower_bound": 0.0793451809329433}}
+{"ctx": ["SparseVectorTechnique2"], "time_dd_search": 148.0983493477106}
+{"ctx": ["SparseVectorTechnique2"], "p1": 0.010916809682902526}
+{"ctx": ["SparseVectorTechnique2"], "p2": 0.009995196061192192}
+{"ctx": ["SparseVectorTechnique2"], "time_final_estimate_eps": 11.82439012825489}
+{"ctx": ["SparseVectorTechnique2"], "eps": 0.08819919036407686}
+{"ctx": ["SparseVectorTechnique2"], "eps_lcb": 0.085933777378977}
+{"ctx": ["SparseVectorTechnique3"], "time_dp_distinguisher_all_inputs": 149.81879127025604}
+{"ctx": ["SparseVectorTechnique3"], "best_result": {"a1": "[1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]", "a2": "[2. 2. 2. 2. 2. 0. 0. 0. 0. 0.]", "attack": "t = 0.538, q = 0.6093354943273906, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[18.89282694 13.27340793 10.51402735  8.85028358  7.95552251  6.91446865\n  6.40244526  5.80098482  5.35660906  4.94058597  0.49997363  0.46893071\n  0.429266    0.39607363  0.36857461  0.34713741  0.32843721  0.31201524\n  0.29819824  0.28633929  1.          0.49997363  0.46893071  0.429266\n  0.39607363  0.36857461  0.34713741  0.32843721  0.31201524  0.29819824], mean=[8.26861438 4.0408535  2.39710831 1.60406141 1.19785489 0.87726239\n 0.72250158 0.5969509  0.4852912  0.40354739 0.494865   0.326495\n 0.24362    0.194835   0.162135   0.140145   0.123      0.1093\n 0.098655   0.09011    0.         0.505135   0.673505   0.75638\n 0.805165   0.837865   0.859855   0.877      0.8907     0.901345  ]), model_structure=Sequential(\n  (0): Linear(in_features=30, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[ 0.0206,  0.0117,  0.0108,  0.0107,  0.0116,  0.0074,  0.0025,  0.0060,\n          0.0008,  0.0040, -0.0262,  0.0169, -0.0160, -0.0051,  0.0387, -0.0701,\n         -0.0559, -0.0391, -0.0871,  0.0249, -0.0108, -0.0124,  0.0291, -0.0086,\n          0.0080,  0.0721, -0.0893, -0.0519, -0.0574, -0.0876]])), ('0.bias', tensor([1.2729e-05]))])]", "eps": 0.17505467872679858, "lower_bound": 0.16547529767183367}}
+{"ctx": ["SparseVectorTechnique3"], "time_dd_search": 149.82481288909912}
+{"ctx": ["SparseVectorTechnique3"], "p1": 0.011929377702106968}
+{"ctx": ["SparseVectorTechnique3"], "p2": 0.010026357554294976}
+{"ctx": ["SparseVectorTechnique3"], "time_final_estimate_eps": 10.51449304074049}
+{"ctx": ["SparseVectorTechnique3"], "eps": 0.17378669139879932}
+{"ctx": ["SparseVectorTechnique3"], "eps_lcb": 0.17157204754154964}
+{"ctx": ["SparseVectorTechnique4"], "time_dp_distinguisher_all_inputs": 122.69405994564295}
+{"ctx": ["SparseVectorTechnique4"], "best_result": {"a1": "[1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]", "a2": "[2. 2. 2. 2. 2. 0. 0. 0. 0. 0.]", "attack": "t = 0.542, q = 0.7135807079787659, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[0.49998396 0.28488803 0.20652318 0.16708897 0.14323368 0.12274327\n 0.10984441 0.10484015 0.09567979 0.091131   1.         0.49998396\n 0.49125498 0.48065054 0.47146518 0.46353263 0.45704752 0.45143111\n 0.44596842 0.44116267], mean=[0.504005 0.0891   0.044645 0.028745 0.020955 0.0153   0.012215 0.011115\n 0.00924  0.008375 0.       0.504005 0.593105 0.63775  0.666495 0.68745\n 0.70275  0.714965 0.72608  0.73532 ]), model_structure=Sequential(\n  (0): Linear(in_features=20, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[ 0.0247,  0.0740,  0.0527,  0.0597,  0.0201, -0.0163, -0.0097, -0.0064,\n         -0.0241, -0.0094,  0.0547,  0.1172,  0.0017,  0.0496, -0.0973, -0.0592,\n          0.0133, -0.0085, -0.0759,  0.0562]])), ('0.bias', tensor([2.3522e-05]))])]", "eps": 0.1762200853453102, "lower_bound": 0.16663804816632943}}
+{"ctx": ["SparseVectorTechnique4"], "time_dd_search": 122.69676594436169}
+{"ctx": ["SparseVectorTechnique4"], "p1": 0.011913383339557713}
+{"ctx": ["SparseVectorTechnique4"], "p2": 0.010041882352548883}
+{"ctx": ["SparseVectorTechnique4"], "time_final_estimate_eps": 7.792596369981766}
+{"ctx": ["SparseVectorTechnique4"], "eps": 0.17089783655096813}
+{"ctx": ["SparseVectorTechnique4"], "eps_lcb": 0.1686833019846503}
+{"ctx": ["SparseVectorTechnique5"], "time_dp_distinguisher_all_inputs": 56.24922397732735}
+{"ctx": ["SparseVectorTechnique5"], "best_result": {"a1": "[2. 2. 2. 2. 2. 0. 0. 0. 0. 0.]", "a2": "[1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]", "attack": "t = 0.488, q = 0.01, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[0.49984942 0.49984942 0.49984942 0.49984942 0.49984942 0.49983868\n 0.49983868 0.49983868 0.49983868 0.49983868], mean=[0.51227 0.51227 0.51227 0.51227 0.51227 0.4873  0.4873  0.4873  0.4873\n 0.4873 ]), model_structure=Sequential(\n  (0): Linear(in_features=10, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[-0.4496, -0.5024, -0.3897, -0.2181, -0.1315,  0.5014,  0.3729,  0.3167,\n          0.1835,  0.3172]])), ('0.bias', tensor([-0.0377]))])]", "eps": 1.7639111997640229, "lower_bound": 1.7568845860659015}}
+{"ctx": ["SparseVectorTechnique5"], "time_dd_search": 56.2530617043376}
+{"ctx": ["SparseVectorTechnique5"], "p1": 0.0582879529}
+{"ctx": ["SparseVectorTechnique5"], "p2": 0.01}
+{"ctx": ["SparseVectorTechnique5"], "time_final_estimate_eps": 2.639959640800953}
+{"ctx": ["SparseVectorTechnique5"], "eps": 1.7628103392152887}
+{"ctx": ["SparseVectorTechnique5"], "eps_lcb": 1.7611853568928795}
+{"ctx": ["SparseVectorTechnique6"], "time_dp_distinguisher_all_inputs": 90.68204025924206}
+{"ctx": ["SparseVectorTechnique6"], "best_result": {"a1": "[1. 1. 1. 1. 1. 0. 0. 0. 0. 0.]", "a2": "[0. 0. 0. 0. 0. 1. 1. 1. 1. 1.]", "attack": "t = 0.556, q = 0.9056664974332939, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[0.49996168 0.49996006 0.4999646  0.4999545  0.49997628 0.49996958\n 0.49994509 0.49994269 0.49997296 0.49994024], mean=[0.49381  0.49368  0.49405  0.493255 0.49513  0.494485 0.49259  0.49243\n 0.4948   0.49227 ]), model_structure=Sequential(\n  (0): Linear(in_features=10, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[-0.0364, -0.0369, -0.0377, -0.0354, -0.0377,  0.0378,  0.0374,  0.0364,\n          0.0370,  0.0373]])), ('0.bias', tensor([-0.0002]))])]", "eps": 0.27865264065525963, "lower_bound": 0.2692818836085511}}
+{"ctx": ["SparseVectorTechnique6"], "time_dd_search": 90.68396644294262}
+{"ctx": ["SparseVectorTechnique6"], "p1": 0.013147403410264005}
+{"ctx": ["SparseVectorTechnique6"], "p2": 0.009994326952177468}
+{"ctx": ["SparseVectorTechnique6"], "time_final_estimate_eps": 4.832117028534412}
+{"ctx": ["SparseVectorTechnique6"], "eps": 0.27420665259705856}
+{"ctx": ["SparseVectorTechnique6"], "eps_lcb": 0.2720409230566201}
+{"ctx": ["Rappor"], "time_dp_distinguisher_all_inputs": 130.63254327327013}
+{"ctx": ["Rappor"], "best_result": {"a1": "[1]", "a2": "[0]", "attack": "t = 0.573, q = 0.21885617214043035, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[0.49999731 0.49984609 0.49982295 0.49999895 0.49984084 0.49986157\n 0.49985454 0.49986262 0.49983703 0.49983214 0.49999928 0.49999884\n 0.49989349 0.49999986 0.49981419 0.49978679 0.49982454 0.49989266\n 0.49999926 0.49985454], mean=[0.49836  0.487595 0.486695 0.498975 0.487385 0.488235 0.48794  0.48828\n 0.487235 0.487045 0.49915  0.501075 0.48968  0.50037  0.48637  0.4854\n 0.486755 0.48964  0.50086  0.48794 ]), model_structure=Sequential(\n  (0): Linear(in_features=20, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[ 0.0482, -0.0010, -0.0017, -0.0479, -0.0009,  0.0003, -0.0010,  0.0008,\n          0.0009, -0.0008, -0.0494,  0.0493,  0.0006, -0.0517,  0.0009, -0.0010,\n          0.0010,  0.0008,  0.0513, -0.0002]])), ('0.bias', tensor([0.0002]))])]", "eps": 0.3017461017772245, "lower_bound": 0.2924196757340489}}
+{"ctx": ["Rappor"], "time_dd_search": 130.63756242394447}
+{"ctx": ["Rappor"], "p1": 0.013423895559173274}
+{"ctx": ["Rappor"], "p2": 0.009993118599943375}
+{"ctx": ["Rappor"], "time_final_estimate_eps": 14.21386282145977}
+{"ctx": ["Rappor"], "eps": 0.2951396534262738}
+{"ctx": ["Rappor"], "eps_lcb": 0.2929848129867416}
+{"ctx": ["OneTimeRappor"], "time_dp_distinguisher_all_inputs": 79.87452901899815}
+{"ctx": ["OneTimeRappor"], "best_result": {"a1": "[1]", "a2": "[0]", "attack": "t = 0.644, q = 0.8676198127592596, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[0.49999952 0.4992683  0.49937185 0.49999909 0.49930994 0.49928687\n 0.49944202 0.49943514 0.49939176 0.49946726 0.4999979  0.49999904\n 0.49945611 0.49999996 0.49943704 0.4993962  0.49936304 0.49946957\n 0.49999987 0.49941038], mean=[0.499305 0.47296  0.474945 0.500955 0.47374  0.473305 0.476385 0.47624\n 0.475345 0.476925 0.49855  0.49902  0.476685 0.49981  0.47628  0.475435\n 0.47477  0.476975 0.50036  0.475725]), model_structure=Sequential(\n  (0): Linear(in_features=20, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[ 9.9051e-02,  5.2281e-04, -9.5922e-04, -9.8791e-02,  9.6041e-05,\n         -4.6165e-04, -2.9043e-04,  1.2887e-03, -4.9837e-04, -5.8279e-05,\n         -9.7832e-02,  1.0090e-01,  2.3293e-04, -9.7736e-02, -1.2351e-03,\n          6.6702e-04, -3.3269e-04,  2.6088e-04,  1.0013e-01,  1.0545e-03]])), ('0.bias', tensor([-0.0002]))])]", "eps": 0.6006883222953059, "lower_bound": 0.5919725173796309}}
+{"ctx": ["OneTimeRappor"], "time_dd_search": 79.8793158531189}
+{"ctx": ["OneTimeRappor"], "p1": 0.018149305289960813}
+{"ctx": ["OneTimeRappor"], "p2": 0.009962614196930696}
+{"ctx": ["OneTimeRappor"], "time_final_estimate_eps": 9.232015132904053}
+{"ctx": ["OneTimeRappor"], "eps": 0.599792777214347}
+{"ctx": ["OneTimeRappor"], "eps_lcb": 0.5977779392161473}
+{"ctx": ["LaplaceParallel"], "time_dp_distinguisher_all_inputs": 96.4639056250453}
+{"ctx": ["LaplaceParallel"], "best_result": {"a1": "[1.]", "a2": "[0.]", "attack": "t = 0.51, q = 0.7816984980530317, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[282.57700297 282.75689023 282.75111038 282.10241437 282.49247589\n 283.38449055 284.33990082 283.46392586 281.60088274 282.94295092\n 282.66570684 283.49794641 282.54216061 284.14033876 283.84669316\n 282.30655321 282.86090429 282.92564524 282.49930742 283.01037863], mean=[ 1.61933989  1.0281824   0.73763737  0.03320432  1.00507356  1.12976135\n  0.8144964   0.62121634  0.89572451 -0.06262636  0.58449608  0.97999579\n  0.63097509 -0.14880686  0.41650489  2.10607203 -0.03612803 -0.21098417\n -0.39719944  0.28390978]), model_structure=Sequential(\n  (0): Linear(in_features=20, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[-0.0031, -0.0048, -0.0036, -0.0037, -0.0032, -0.0043, -0.0012, -0.0038,\n         -0.0027, -0.0040, -0.0026, -0.0043, -0.0039, -0.0037, -0.0039, -0.0030,\n         -0.0029, -0.0047, -0.0050, -0.0030]])), ('0.bias', tensor([-1.2125e-05]))])]", "eps": 0.03865917083726611, "lower_bound": 0.0287392105066262}}
+{"ctx": ["LaplaceParallel"], "time_dd_search": 96.46830970048904}
+{"ctx": ["LaplaceParallel"], "p1": 0.01040275493287595}
+{"ctx": ["LaplaceParallel"], "p2": 0.010022443356666048}
+{"ctx": ["LaplaceParallel"], "time_final_estimate_eps": 7.976842552423477}
+{"ctx": ["LaplaceParallel"], "eps": 0.037243754558828}
+{"ctx": ["LaplaceParallel"], "eps_lcb": 0.03495277953654963}
+{"ctx": ["SVT34Parallel"], "time_dp_distinguisher_all_inputs": 341.2540283277631}
+{"ctx": ["SVT34Parallel"], "best_result": {"a1": "[1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]", "a2": "[2. 2. 2. 2. 2. 0. 0. 0. 0. 0.]", "attack": "t = 0.55, q = 0.20156059991892988, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[36.07440237 36.30136319 31.02974633 26.64885962 22.89825507 19.91044515\n 17.21402442 15.25327769 13.71822421 12.31662453  0.49997589  0.49996931\n  0.3411298   0.26639301  0.22233951  0.1893738   0.171343    0.15465694\n  0.14712254  0.13682384  1.          1.          1.          1.\n  1.          1.          1.          1.          1.          1.\n  1.          1.          0.49284655  0.49997317  0.49718839  0.49290627\n  0.488729    0.48456758  0.48076356  0.47689721  0.49998995  0.49998356\n  0.48802125  0.45788347  0.42151709  0.38694911  0.35436491  0.3259994\n  0.30102393  0.27936472  1.          1.          1.          1.\n  1.          1.          1.          1.          1.          1.\n  1.          1.          0.45654011  0.49997579  0.47918191  0.4420124\n  0.40392797  0.36862044  0.33816977  0.31123101  1.          1.\n  1.          1.          1.          1.          1.          1.\n  1.          1.        ], mean=[18.38947952 18.54285297 13.03853779  9.11663794  6.40040372  4.58514325\n  3.36976656  2.54124963  2.011335    1.58756281  0.50491     0.50554\n  0.134445    0.076875    0.052155    0.03725     0.030275    0.02452\n  0.022135    0.019085    0.          0.          0.          0.\n  0.          0.          0.          0.          0.          0.\n  0.          0.          0.415725    0.50518     0.55295     0.583925\n  0.605565    0.623265    0.637355    0.65023     0.49683     0.495945\n  0.39121     0.299145    0.23107     0.183345    0.14726     0.12089\n  0.10077     0.085325    0.          0.          0.          0.\n  0.          0.          0.          0.          0.          0.\n  0.          0.          0.29611     0.50492     0.642775    0.73372\n  0.79469     0.837815    0.868295    0.891325    0.          0.\n  0.          0.          0.          0.          0.          0.\n  0.          0.        ]), model_structure=Sequential(\n  (0): Linear(in_features=80, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[ 0.0092,  0.0102,  0.0074,  0.0064,  0.0048,  0.0044,  0.0008,  0.0009,\n          0.0004, -0.0017,  0.0320,  0.0334,  0.0267,  0.0148,  0.0168, -0.0186,\n         -0.0152, -0.0148, -0.0131, -0.0127, -0.0063,  0.0536, -0.0034, -0.0580,\n         -0.0499,  0.0505, -0.0220, -0.0510, -0.0539, -0.0391, -0.0230,  0.0588,\n          0.0104,  0.0014,  0.0105, -0.0076, -0.0232, -0.0357, -0.0028, -0.0059,\n         -0.0055, -0.0051, -0.0043, -0.0045, -0.0043,  0.0233,  0.0137,  0.0195,\n          0.0072,  0.0073, -0.0055,  0.0475,  0.0229, -0.0056,  0.0065,  0.0107,\n          0.0423,  0.0575, -0.0435, -0.0162, -0.0171,  0.0457,  0.0043,  0.0040,\n          0.0024,  0.0208,  0.0135,  0.0074,  0.0131,  0.0007, -0.0301,  0.0224,\n          0.0549, -0.0236, -0.0564,  0.0206, -0.0616,  0.0237, -0.0290,  0.0608]])), ('0.bias', tensor([-0.0001]))])]", "eps": 0.2693060836233858, "lower_bound": 0.25990616513818043}}
+{"ctx": ["SVT34Parallel"], "time_dd_search": 341.2578923255205}
+{"ctx": ["SVT34Parallel"], "p1": 0.013006004739562222}
+{"ctx": ["SVT34Parallel"], "p2": 0.00999616586846372}
+{"ctx": ["SVT34Parallel"], "time_final_estimate_eps": 22.664100348949432}
+{"ctx": ["SVT34Parallel"], "eps": 0.26320954754161097}
+{"ctx": ["SVT34Parallel"], "eps_lcb": 0.2610381735699283}
+{"ctx": ["PrefixSum"], "time_dp_distinguisher_all_inputs": 92.12463346868753}
+{"ctx": ["PrefixSum"], "best_result": {"a1": "[1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]", "a2": "[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]", "attack": "t = 0.623, q = 0.3891327063740857, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[14.21203161 20.11525512 24.56076911 28.39866668 31.79762933 34.8691738\n 37.67118106 40.26911156 42.73118282 45.04202101], mean=[0.52244999 1.02776905 1.51393717 2.08128977 2.68965479 3.17525265\n 3.7407951  4.23877838 4.72858728 5.24492419]), model_structure=Sequential(\n  (0): Linear(in_features=10, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[ 0.0011,  0.0008, -0.0031,  0.0039, -0.0019,  0.0049, -0.0055,  0.0026,\n         -0.0125, -0.2116]])), ('0.bias', tensor([-0.0011]))])]", "eps": 0.5151665539435193, "lower_bound": 0.506270848599244}}
+{"ctx": ["PrefixSum"], "time_dd_search": 92.12698092311621}
+{"ctx": ["PrefixSum"], "p1": 0.016549656943573667}
+{"ctx": ["PrefixSum"], "p2": 0.009977157881922676}
+{"ctx": ["PrefixSum"], "time_final_estimate_eps": 4.849623702466488}
+{"ctx": ["PrefixSum"], "eps": 0.5060671047282748}
+{"ctx": ["PrefixSum"], "eps_lcb": 0.5040117462103613}
+{"ctx": ["NumericalSVT"], "time_dp_distinguisher_all_inputs": 142.21119548380375}
+{"ctx": ["NumericalSVT"], "best_result": {"a1": "[2. 2. 2. 2. 2. 2. 2. 2. 2. 2.]", "a2": "[1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]", "attack": "t = 0.51, q = 0.10326885298125764, CLASSIFIER = MultiLayerPerceptron[normalizer=StandardScaler(scale=[ 60.18437762  60.0303307  445.97607667 501.93710553 472.83442712\n 417.79167809 359.55508823 306.24533186 261.36730612 222.24832124], mean=[ 5.99923959e-01  7.19723679e-01 -2.66754750e+02 -5.01644218e+02\n -6.66655491e+02 -7.76125061e+02 -8.48192559e+02 -8.95619236e+02\n -9.26542134e+02 -9.48097912e+02]), model_structure=Sequential(\n  (0): Linear(in_features=10, out_features=1, bias=True)\n  (1): Sigmoid()\n), params=OrderedDict([('0.weight', tensor([[-0.0085, -0.0067,  0.0025,  0.0037,  0.0012,  0.0033,  0.0018,  0.0027,\n         -0.0008,  0.0017]])), ('0.bias', tensor([3.9777e-05]))])]", "eps": 0.037027396066341645, "lower_bound": 0.027100704000349474}}
+{"ctx": ["NumericalSVT"], "time_dd_search": 142.22191462665796}
+{"ctx": ["NumericalSVT"], "p1": 0.010394288470169726}
+{"ctx": ["NumericalSVT"], "p2": 0.010020580694299418}
+{"ctx": ["NumericalSVT"], "time_final_estimate_eps": 9.468196831643581}
+{"ctx": ["NumericalSVT"], "eps": 0.03661542222872516}
+{"ctx": ["NumericalSVT"], "eps_lcb": 0.034323746664875365}

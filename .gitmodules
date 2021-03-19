@@ -1,0 +1,3 @@
+[submodule "statdp"]
+	path = statdp
+	url = git@github.com:eth-sri/statdp.git
