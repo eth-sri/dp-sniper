@@ -4,7 +4,9 @@ The instructions below describe how to reproduce the experiment results from the
 
 ## Running Experiments
 
-Execute the following commands in the project root directory to run the experiments. Depending on your machine, running all experiments may take a _very long time (up to 72 hours)!_
+Execute the following commands in the project root directory to run the
+experiments. Depending on your machine, running all experiments may take a _very
+long time (in the order of days)!_
 
 ```bash
 # remember to activate the environment
