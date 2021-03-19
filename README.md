@@ -119,4 +119,6 @@ You are encouraged to cite the following research paper if you use DP-Sniper for
 
 MIT License, see [LICENSE](LICENSE).
 
-This repository includes third-party code from [statdp](https://github.com/cmla-psu/statdp) (MIT License, Copyright (c) 2018-2019 Yuxin Wang). See comments in source for details.
+This repository includes third-party code from
+[statdp](https://github.com/cmla-psu/statdp), marked as `MIT License, Copyright
+(c) 2018-2019 Yuxin Wang`.
