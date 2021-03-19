@@ -1,33 +1,29 @@
 #!/bin/bash
-# Installs dpsniper, statdp and statdpwrapper
+# Installs dpsniper using conda
+# 
+# Installing conda:
+# https://conda.io/projects/conda/en/latest/user-guide/install/index.html
 
-# to enable activating conda from within this script
+# enable activating conda from within this script
 eval "$(conda shell.bash hook)"
+
+################
+# INSTALLATION #
+################
 
 echo "Creating conda environment 'dp-sniper'..."
 conda create -y -n dp-sniper python=3.8
 
-echo "Activating conda environment..."
+echo "Activating conda environment before executing any further command..."
 conda activate dp-sniper
 
-echo "Installing dpsniper..."
+echo "Installing package dpsniper..."
 pip install .
 
-echo "Running dpsniper tests..."
+#########
+# TESTS #
+#########
+# to verify successful installation
+
+echo "Running dpsniper unit tests..."
 make tests
-
-echo "Initializing statdp submodule..."
-git submodule init
-git submodule update
-
-echo "Installing statdp prerequisites..."
-conda install -y numba sympy tqdm coloredlogs
-conda install -y -c intel icc_rt
-
-echo "Installing statdp..."
-cd statdp
-pip install .
-cd ..
-
-echo "Running statdpwrapper tests..."
-make tests-statdpwrapper

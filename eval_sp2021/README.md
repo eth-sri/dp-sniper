@@ -2,6 +2,20 @@
 
 The instructions below describe how to reproduce the experiment results from the original SP 2021 publication.
 
+## Installation
+
+To install the prerequisites for running the evaluation, run the installation
+script [install-statdp.sh](/install-statdp.sh)
+
+```bash
+bash ./install-statdp.sh
+```
+
+This installs a specific version of [statdp](https://github.com/cmla-psu/statdp)
+(commit `16f389baf41b047dc6e70c334a8c49a7e00b5b7c` of 2020-05-14) provided in
+the submodule [statdp/](https://github.com/eth-sri/statdp) and relies on a
+wrapper provided in [statdpwrapper/](statdpwrapper).
+
 ## Running Experiments
 
 Execute the following commands in the project root directory to run the
