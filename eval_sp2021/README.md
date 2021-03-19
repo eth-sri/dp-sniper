@@ -14,7 +14,7 @@ bash ./install-statdp.sh
 This installs a specific version of [statdp](https://github.com/cmla-psu/statdp)
 (commit `16f389baf41b047dc6e70c334a8c49a7e00b5b7c` of 2020-05-14) provided in
 the submodule [statdp](https://github.com/eth-sri/statdp) and relies on a
-wrapper provided in directory [statdpwrapper](statdpwrapper).
+wrapper provided in `/statdpwrapper`.
 
 ## Running Experiments
 
