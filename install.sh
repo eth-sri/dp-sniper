@@ -1,8 +1,5 @@
 #!/bin/bash
 # Installs dpsniper using conda
-# 
-# Installing conda:
-# https://conda.io/projects/conda/en/latest/user-guide/install/index.html
 
 # enable activating conda from within this script
 eval "$(conda shell.bash hook)"

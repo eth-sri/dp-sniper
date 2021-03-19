@@ -4,7 +4,11 @@ A machine-learning-based tool for discovering differential privacy violations in
 
 ## Install
 
-Install DP-Sniper by running its installation script [install.sh](./install.sh):
+We recommend installing DP-Sniper using
+[conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
+
+After installing conda, you can install DP-Sniper by running its installation
+script [install.sh](./install.sh):
 
 ```bash
 bash ./install.sh
