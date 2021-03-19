@@ -17,7 +17,7 @@ bash ./install.sh
 You can ignore the warning `ResourceWarning: unclosed running multiprocessing
 pool`.
 
-_Note: The above steps are sufficient to use the main package `dpsniper`. If you would like to run the experiments from the SP 2021 research paper, you have to follow additional installation steps as described [below](README.md#sp-2021-evaluation)._
+_Note: The above steps are sufficient to use the main package `dpsniper`. If you would like to run the experiments from the SP 2021 research paper, you have to follow additional installation steps as described in [eval_sp2021/README.md](eval_sp2021/README.md))._
 
 ## Basic Usage
 
