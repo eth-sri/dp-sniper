@@ -13,15 +13,17 @@ if __name__ == "__main__":
     mechanism = LaplaceMechanism()
 
     # configuration
+	# use Logistic regression with stochastic gradient descent optimization as the underlying machine-learning algorithm
     classifier_factory = LogisticRegressionFactory(in_dimensions=1, optimizer_factory=SGDOptimizerFactory())
+	# consider 1-dimensional floating point input pairs from the range [-10, 10] with maximum distance of 1
     input_generator = PatternGenerator(InputDomain(1, InputBaseType.FLOAT, [-10, 10]), False)
     config = DDConfig(n_processes=2)
 
     with initialize_dpsniper(config, out_dir="example_outputs"):
-        # run DD-Search
+        # run DD-Search to find the witness
         witness = DDSearch(mechanism, DPSniper(mechanism, classifier_factory, config), input_generator, config).run()
 
-        # re-estimate epsilon and lower bound with high precision
+		# re-compute the power of the witness using high precision for a tighter lower confidence bound
         witness.compute_eps_high_precision(mechanism, config)
 
     print("eps_lcb = {}".format(witness.lower_bound))

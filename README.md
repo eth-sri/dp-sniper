@@ -17,30 +17,26 @@ _Note: The above steps are sufficient to use the main package `dpsniper`. If you
 
 ## Basic Usage
 
-### Example: Testing the Laplace Mechanism
+The following command tests the differential privacy of the Laplace mechanism,
+explained in detail in file [dpsniper/example.py](dpsniper/example.py):
 
-Below, we provide a minimal example snippet testing differential privacy for the Laplace mechanism (see [dpsniper/example.py](dpsniper/example.py) for the complete code). The example uses Logistic regression with stochastic gradient descent optimization as the underlying machine-learning algorithm. It considers 1-dimensional floating point input pairs from the range [-10, 10] with maximum distance of 1. The DD-Search algorithm wraps the core DP-Sniper algorithm and is used to find the witness. The last line re-computes the power of the witness using high precision for a tighter lower confidence bound. When executing the example, temporary outputs and log files will be stored to the folder `example_outputs` of the current working directory.
-
-```python
-# create mechanism
-mechanism = LaplaceMechanism()
-
-# configuration
-classifier_factory = LogisticRegressionFactory(in_dimensions=1, optimizer_factory=SGDOptimizerFactory())
-input_generator = PatternGenerator(InputDomain(1, InputBaseType.FLOAT, [-10, 10]), False)
-config = DDConfig(n_processes=2)
-
-with initialize_dpsniper(config, out_dir="example_outputs"):
-    # run DD-Search
-    witness = DDSearch(mechanism, DPSniper(mechanism, classifier_factory, config), input_generator, config).run()
-
-    # re-estimate epsilon and lower bound with high precision
-    witness.compute_eps_high_precision(mechanism, config)
+```bash
+conda activate dp-sniper
+python dpsniper/example.py
 ```
+
+This commands stores temporary outputs and log files to the folder
+`example_outputs` of the current working directory.
 
 ### Testing Your Own Mechanism
 
-DP-Sniper is a black-box approach. To run DP-Sniper or DD-Search on your own mechanism, you only have to implement the method `m` of the abstract class `Mechanism` defined in [dpsniper/mechanisms/abstract.py](dpsniper/mechanisms/abstract.py) and modify the code snippet above. See [dpsniper/mechanisms](dpsniper/mechanisms) for example implementations of popular mechanisms.
+DP-Sniper is a black-box approach. To run DP-Sniper or DD-Search on your own
+mechanism, you only have to implement the method `m` of the abstract class
+`Mechanism` defined in
+[dpsniper/mechanisms/abstract.py](dpsniper/mechanisms/abstract.py) and modify
+the code snippet in [dpsniper/example.py](dpsniper/example.py). See
+[dpsniper/mechanisms](dpsniper/mechanisms) for example implementations of
+popular mechanisms.
 
 ## Publication
 
