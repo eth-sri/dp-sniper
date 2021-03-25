@@ -10,7 +10,8 @@ import matplotlib.ticker as ticker
 import math
 import argparse
 
-figure_height = 20
+figure_height = 26
+font_size = 8
 x_axis_label_offset_top = -0.027
 
 # color configuration
@@ -133,7 +134,7 @@ def label_barh(ax, pos, val, color, to_text=lambda v: "{:.3f}".format(round(v, 3
                 v += label_indent
             ax.text(v, p - 0.03, text,
                     color=color,
-                    fontsize=7,
+                    fontsize=font_size,
                     horizontalalignment='left',
                     verticalalignment='center'
                     )
@@ -170,7 +171,7 @@ def plot_powers(output_dir):
     df_old = df[df['old']]
     df_new = df[~ df['old']]
 
-    sph.configure_plots("IEEE", 7)
+    sph.configure_plots("IEEE", font_size)
 
     fig, axes = sph.subplots(
         2, 1,
@@ -295,7 +296,7 @@ def plot_runtimes(output_dir):
     times_old = times[times['old']]
     times_new = times[~ times['old']]
 
-    sph.configure_plots("IEEE", 7)
+    sph.configure_plots("IEEE", font_size)
 
     fig, axes = sph.subplots(
         2, 1,
