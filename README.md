@@ -59,7 +59,19 @@ The main algorithms DD-Search and DP-Sniper from the paper can be found in
 You are encouraged to cite the above publication using the following BibTeX entry
 if you use DP-Sniper for academic research.
 
-    TODO: Add bibtex
+    @inproceedings{bichsel2021dpsniper,
+        author={Bichsel, Benjamin and Steffen, Samuel and Bogunovic, Ilija and Vechev, Martin},
+        title = {DP-Sniper: Black-Box Discovery of Differential Privacy Violations using Classifiers},
+        booktitle = {2021 IEEE Symposium on Security and Privacy (SP)},
+        year = {2021},
+        pages = {391-409},
+        doi = {10.1109/SP40001.2021.00081},
+        url = {https://doi.org/10.1109/SP40001.2021.00081},
+        publisher = {IEEE Computer Society},
+        address = {Los Alamitos, CA, USA},
+        month = {may}
+    }
+
 
 ### Evaluation
 
