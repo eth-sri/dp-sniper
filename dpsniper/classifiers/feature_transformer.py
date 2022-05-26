@@ -31,27 +31,13 @@ class BitPatternFeatureTransformer(FeatureTransformer):
     def transform(self, x):
         assert(x.shape[1] == 1)         # must be 1-d features
         assert(x.dtype == np.float64)   # must be 64 bit floats (double precision)
-
-        # unfortunately, cannot vectorize this
-        res = np.zeros((x.shape[0], 64), dtype=np.bool)
-        for row_idx in range(0, x.shape[0]):
-            v = x[row_idx, 0]
-
-            # extract floating point bit pattern according to
-            # https://stackoverflow.com/questions/16444726/binary-representation-of-float-in-python-bits-not-hex
-            packed = struct.pack("!d", v)
-            str_bytes = [bin(c) for c in packed]
-
-            byte_offset = 1
-            for byte in str_bytes:
-                for bit_idx in range(0, len(byte)):
-                    bit = byte[len(byte) - bit_idx - 1]
-                    if bit == 'b':
-                        break
-                    res[row_idx, 8*byte_offset - bit_idx - 1] = bit
-                    bit_idx += 1
-                byte_offset += 1
-        return res
+        # Use numpy arrays as structs
+        x_int = x.view( dtype=np.uint64 ).reshape(-1)
+        # Use format to convert to binary string
+        int_to_bin = lambda x: [ c == '1' for c in '{:0>64b}'.format(x) ]
+        x_bin = np.array( list( map( int_to_bin, x_int ) ) )
+        x_bin = x_bin.reshape( ( x.shape[0], 64 ) )
+        return x_bin
 
 
 class FlagsFeatureTransformer(FeatureTransformer):
